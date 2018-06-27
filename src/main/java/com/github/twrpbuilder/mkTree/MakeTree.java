@@ -359,7 +359,7 @@ public class MakeTree {
                 "  -O $HOME/twrp.tar.xz\n" +
                 "- tar -xJf twrp.tar.xz --directory $HOME/twrp/ && rm twrp.tar.xz\n" +
                 "script:\n" +
-                "  - cd $HOME/twrp/ && git clone https://github.com/TwrpBuilder/android_device_"+info.getBrand()+"_"+info.getCodename()+".git device/"+info.getBrand()+File.separator+info.getCodename()+"\n" +
+                "  - cd $HOME/twrp/ && git clone https://github.com/ALGPHELLO/android_device_"+info.getBrand()+"_"+info.getCodename()+".git device/"+info.getBrand()+File.separator+info.getCodename()+"\n" +
                 "  - git clone https://github.com/TwrpBuilder/device_generic_twrpbuilder.git device/generic/twrpbuilder\n" +
                 "  - rm -rf bootable/recovery && git clone https://github.com/omnirom/android_bootable_recovery.git bootable/recovery\n" +
                 "  - |\n" +
@@ -380,7 +380,7 @@ public class MakeTree {
                 "  file: $HOME/twrp/*.img\n" +
                 "  on:\n" +
                 "    tags: false\n" +
-                "    repo: TwrpBuilder/android_device_"+info.getBrand()+"_"+info.getCodename()+"\n" +
+                "    repo: ALGPHELLO/android_device_"+info.getBrand()+"_"+info.getCodename()+"\n" +
                 "    branch: master";
 	    return data;
     }
